@@ -8,8 +8,9 @@ RUN rm -rf ./package-lock.json
 
 RUN npm install
 
-COPY . /usr/cms
+COPY . /usr/web
 
+CMD npm run build
 
 
 
